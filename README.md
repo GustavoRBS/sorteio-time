@@ -11,7 +11,7 @@ Sistema de sorteio de times.
 1. Clone este repositório:
 
     ```bash
-    git clone https://github.com/GustavoRBS/sorteio-time.git
+    git clone https://github.com/GustavoRBS/sorteio-times.git
     ```
 
 2. Navegue até o diretório do projeto:
