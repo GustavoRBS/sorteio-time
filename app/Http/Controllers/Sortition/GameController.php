@@ -22,8 +22,8 @@ class GameController extends Controller
     {
         $ids = $request->input('id');
 
-        if($ids == null)
-        return redirect()->back()->with(['error' => __("Adicione os jogadores antes!")]);
+        if ($ids == null)
+            return redirect()->back()->with(['error' => __("Adicione os jogadores antes!")]);
 
         $game = Games::create([]);
 
@@ -39,7 +39,7 @@ class GameController extends Controller
 
         if ($teams instanceof \Illuminate\Http\RedirectResponse) {
             return $teams;
-        }   
+        }
 
         return view('sortition.result', ['times' => $teams])
             ->with(['success' => "Jogadores adicionados com sucesso!"]);
@@ -49,9 +49,8 @@ class GameController extends Controller
     {
         $confirmedPlayers = PlayersGame::leftJoin('players', 'players_game.player_id', '=', 'players.id')->where('confirmed', true)->where('game_id', $game_id)->get()->toArray();
 
-        if (count($confirmedPlayers) < $numPlayersPerTeam * 2) {
+        if (count($confirmedPlayers) < $numPlayersPerTeam * 2)
             return redirect()->back()->with(['error' => __("Jogadores confirmados insuficientes!")]);
-        }
 
         $goalkeepers = array();
         $noGoalkeepers = array();
