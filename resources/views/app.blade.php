@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid collapse-mobile">
-            <div class="col-2 col-sm-2 col-lg-3 d-flex justify-content-center align-items-center">
+            <div class="col-3 col-sm-3 col-lg-3 d-flex justify-content-center align-items-center">
                 <div class="logo-margin">
                     <img src="/assets/images/complete_logo.svg" alt="Logo" height="40" class="d-inline-block align-top">
                 </div>
