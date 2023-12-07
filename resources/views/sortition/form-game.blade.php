@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    @if($players)
+                    @if($players->isNotEmpty())
                     <div class="title mb-3">
                         Jogadores
                     </div>
