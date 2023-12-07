@@ -49,9 +49,10 @@ um sorteio com 5 jogadores por time, o mínimo de confirmados deve ser 10).
 
 ## Uso
 
-Foi desenhado em três telas, uma de cadastro de jogadores, a outra confirmação de presença e número de jogadores por time e a última a tela dos resultado do sorteio de times.
+O sistema foi concebido em três interfaces distintas: a primeira destinada ao registro de jogadores, a segunda à confirmação de presença e à definição do número de jogadores por equipe, e a última voltada para a exibição dos resultados do sorteio das equipes.
 
 ## Contato
 
-gu.bailon@hotmail.com
+Nome: Gustavo Ribeiro Bailon Silva
+E-mail: gu.bailon@hotmail.com
 
