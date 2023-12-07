@@ -29,13 +29,15 @@ class PlayersController extends Controller
 
         PlayersGame::query()->delete();
 
-        foreach ($ids as $i => $item) {
-            $player = Players::find($item);
-            $player->update([
-                'name' => $edit_names[$i],
-                'nivel' => $edit_niveis[$i],
-                'goalkeeper' => $request->input("edit_goalkeeper_" . $item) ?? 0,
-            ]);
+        if ($ids) {
+            foreach ($ids as $i => $item) {
+                $player = Players::find($item);
+                $player->update([
+                    'name' => $edit_names[$i],
+                    'nivel' => $edit_niveis[$i],
+                    'goalkeeper' => $request->input("edit_goalkeeper_" . $item) ?? 0,
+                ]);
+            }
         }
 
         foreach ($names as $i => $item) {
