@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-user-plus"></i> Adicionar Jogadores</a>
+                        <a class="nav-link" href="{{ route('players.new') }}"><i class="fa-solid fa-user-plus"></i> Adicionar Jogadores</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('game.new') }}"><i class="fa-solid fa-people-group"></i> Sortear times</a>
