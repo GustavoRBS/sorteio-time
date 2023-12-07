@@ -55,6 +55,6 @@ O sistema foi concebido em três interfaces distintas: a primeira destinada ao r
 
 Se você tiver alguma dúvida ou precisar entrar em contato, sinta-se à vontade para fazê-lo:
 
-**Nome:** Gustavo Ribeiro Bailon Silva
-**E-mail:** gu.bailon@hotmail.com
+- **Nome:** Gustavo Ribeiro Bailon Silva
+- **E-mail:** gu.bailon@hotmail.com
 
