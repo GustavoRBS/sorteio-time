@@ -17,7 +17,7 @@
                     <div class="col-12 col-md-12 col-lg-12">
                         <div class="mb-3">
                             {{ Form::label('number', 'Jogadores por time', ['class' => 'form-label']) }}
-                            {{ Form::text('number', $item->name ?? null, ['class' => 'form-control', 'placeholder' => 'Adicione a qunatidade por time', 'required' => true, 'id'=>'number']) }}
+                            {{ Form::select('number', array_combine(range(2, 15), range(2, 15)), null, ['class' => 'form-control','placeholder' => 'Selecione a quantidade por time','required' => true,'id' => 'number']) }}
                         </div>
                     </div>
                 </div>
