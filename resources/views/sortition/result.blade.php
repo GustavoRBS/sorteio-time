@@ -18,17 +18,12 @@
                     <div class="title">
                         {{ $key }}
                     </div>
-                    @php
-                    $svg = 1;
-                    if($svg == 5)
-                    $svg = 1;
-                    @endphp
                     @foreach($time as $item)
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="card card-player mb-3">
                             <div class="row g-0">
                                 <div class="col-12 col-md-12 col-lg-4 mt-2 d-flex align-items-center justify-content-center">
-                                    <img src="/assets/images/jogador{{ $svg }}.svg" class="img-fluid rounded-start" alt="...">
+                                    <img src="/assets/images/jogador{{ ($loop->iteration % 4) + 1 }}.svg" class="img-fluid rounded-start" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -40,9 +35,6 @@
                             </div>
                         </div>
                     </div>
-                    @php
-                    $svg ++;
-                    @endphp
                     @endforeach
                 </div>
                 @endforeach
